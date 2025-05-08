@@ -22,10 +22,10 @@ def calculate(*args, **kwargs):
     if len(args) < 2:
         raise ValueError("At least two numbers are required for calculations.")
 
-    return _process_operations(args, kwargs)
+    return process_operations(args, kwargs)
 
 
-def _process_operations(numbers, operations):
+def process_operations(numbers, operations):
     """
     Helper function to apply operations to the provided numbers.
 
